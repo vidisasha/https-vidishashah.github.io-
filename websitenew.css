@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    
+}
+
+#about{
+    width: 100%;
+    height: 91vh;
+    background: url(./images/pexels-thisisengineering-3862601.jpg) center/cover fixed no-repeat;
+    position: relative;
+}
+
+.intro{
+    width: 50%;
+    position: absolute;
+    top: 155px;
+    left: 105px;
+    text-align: center;
+}
+
+#about h1{
+    padding-top: 20px;
+    font-size: 65px;
+    font-family: 'Great Vibes', cursive;
+}
+
+#about h2{
+    font-size: 17px;
+    padding: 5px;
+}
+
+.intro h3{
+    font-size: 16px;
+    padding: 10px;
+}
+.nav{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar{
+    width: 100%;
+    background: #e9ecef;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.navbar li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.navbar li:hover{
+    background: white;
+}
+
+.navbar li a{
+    text-decoration: none;
+    margin: 30px;
+    color: #000;
+}
+
+#skills{
+    min-height: 40vh;
+    width: 100vw;
+    background: #588157 ;
+}
+
+#education{
+    min-height: 50vh;
+    width: 100vw;
+    background: #cad2c5;
+}
+#blog{
+    min-height: 70vh;
+    width: 100vw;
+    background: #cad2c5 ;
+}
+
+#contact{
+    min-height: 35vh;
+    width: 100vw;
+    background: #cad2c5;
+}
+
+.skills{
+    width: 100%;
+    position: absolute;
+    margin: 70px 50px;
+}
+
+.skills h1{
+    font-size: 50px;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+}
+
+.skills li{
+    padding: 15px;
+    background: #e9ecef;
+    float: left;
+    color: #000;
+    width: 230px;
+    margin: 0 10px;
+    list-style: none;
+    font-size: 15px;
+}
+
+.bar{
+    background: #353b48;
+    display: block;
+    height: 5px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #588157;
+}
+
+.bar span{
+    height: 15px;
+    float: left;
+    background: #588157;
+}
+
+.SEO{
+    width: 90%;
+}
+
+.HTMLCSS{
+    width: 60%;
+}
+
+.GoogleAnalytics{
+    width: 30%;
+}
+
+.EmailMarketing{
+    width: 50%;
+}
+
+.Photoshop{
+    width: 70%;
+}
+
+.education{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+caption{
+    font-size: 30px;
+    color: white;
+    padding-bottom: 40px;
+}
+
+table{
+    background: #e9ecef;
+    padding: 10px;
+}
+
+th{
+    font-size: 25px;
+    padding: 10px;
+}
+
+td{
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.product{
+    position: relative;
+    top: 80px;
+    left: 70px;
+    width: 300px;
+    height: 400px;
+    background: #0e0e0f;
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+    border-radius: 5px;
+    overflow: hidden;
+    float: left;
+    margin: 0 20px;
+}
+
+.product .imgbox{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.specifice{
+    position: absolute;
+    width: 100%;
+    bottom: -120px;
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.product:hover .specifice{
+    bottom: 0;
+}
+
+.specifice h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    width: 100%;
+}
+
+.specifice h2 span{
+    font-size: 15px;
+    color: #ccc;
+    font-weight: normal;
+}
+
+.specifice .price{
+    position: absolute;
+    top: 12px;
+    right: 25px;
+    font-weight: bold;
+    color: #000;
+    font-size: 30px;
+}
+
+label{
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.size {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.size li{
+    list-style: none;
+    margin: 5px 5px 0;
+    font-size: 15px;
+    font-weight: normal;
+    color: #ccc;   
+}
+
+.size li:first-child {
+    margin-left: 0;
+}
+
+.size.colors li{
+    width: 15px;
+    height: 15px;
+}
+
+.size li a{
+    display: block;
+    padding: 5px;
+    color: #fff;
+    margin: 10px 0 0;
+    background: #45b9e0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .02s;
+    cursor: pointer;
+}
+
+.size li a:hover{
+    background: #5acef4;
+}
+
+.contact{
+    background: #e9ecef;
+    font-size: 18px;
+    display: flex;
+    padding: 35px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact h1{
+    font-size: 20px;
+}
+
+.contact p{
+    background: #588157;
+    padding: 10px;
+    color: white;
+}
+
+.footer{
+    background: #588157;
+    text-align: center;
+    font-size: 15px;
+    padding: 70px;
+    bottom: 0;
+}
+
+#work{
+    min-height: 15vh;
+    width: 100vw;
+    background: #588157;
+    position: relative;
+}
+
+.work{
+    font-size: 50px;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+}
+
+.container{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.hover_effect{
+    width: 400px;
+    height: 390px;
+    overflow: hidden;
+    position: relative;
+    transition: .10s;
+}
+
+.hover_effect img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .8s;
+}
+
+.hover_effect p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-1500%, -50%);
+    z-index: 11;
+    font-size: 25px;
+    color: #fff;
+    transition-timing-function: ease;
+}
+
+.hover_effect:after{
+    content: '';
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.hover_effect:hover:after{
+    top: 0;
+    left: 0;
+    transition: all ease-in-out;
+}
+
+.hover_effect:hover img{
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.hover_effect:hover p{
+    transform: translate(-50%, -50%);
+}

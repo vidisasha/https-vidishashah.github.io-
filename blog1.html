@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-page</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 80px;
+    z-index: 999;    
+}
+
+.logo a{
+    text-decoration: none;
+    font-family: 'Prata', serif;
+    font-size: 30px;
+    display: inline-block;
+    color: #fff;
+}
+
+.menu{
+    text-align: right;
+}
+
+.menu a{
+    clear: right;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 10px 0 10px 80px;
+    font-size: 20px;
+}
+
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    display: none;
+    width: 26px;
+    float: right;
+        }
+
+#toggle{
+    display: none;
+}
+
+.background{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/pexels-suzy-hazelwood-2382325.jpg) center/cover fixed no-repeat;
+    position: absolute;
+    top: 0;
+    z-index: 998;
+}
+
+.banner-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+
+.underline{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 3px;
+    background: white;
+}
+
+@media only screen and (max-width: 900px){
+.nav{
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+    label{
+        display: block;
+        cursor: pointer;
+    }
+
+    .logo a{
+    text-decoration: none;
+    font-family: 'Prata', serif;
+    font-size: 30px;
+    color: #797a7e;
+    padding-left: 30px;
+}
+
+    .menu{
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu a{
+        display: block;
+        border-bottom: 1px solid #eaeaeb;
+        margin: 0;
+        z-index: 999;
+        line-height: 70px;
+    }
+
+    #toggle:checked + .menu{
+        display: block;
+        }
+    
+    .background{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/pexels-suzy-hazelwood-2382325.jpg) center/cover fixed no-repeat;
+    position: absolute;
+    top: 0;
+    z-index: 998;
+}
+
+.banner-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+
+.underline{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 3px;
+    background: white;
+}
+}
+    </style>
+</head>
+<body>
+        <div class="nav">
+        <div class="logo">
+            <a href="portfolio.html">Back to Portfolio</a>
+        </div>
+    
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" />
+        <div class="menu">
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Articles</a>
+            <a href="portfolio.html">Subscribe</a>
+        </div>
+
+        <div class="background">
+
+        <h1 class="banner-title">
+            How to use Mindfulness in your everyday life.
+        </h1>
+        <div class="underline"></div>
+    </div>
+
+    </div>
+</body>
+</html>

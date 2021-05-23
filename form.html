@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Survey Form</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+    
+.back{
+    width: 100%;
+    height: 120vh;
+    position: relative;
+}
+
+.form{
+    width: 100%;
+    height: 120vh;
+    background: #D3EAE8;
+    position: absolute;
+}
+
+fieldset{
+    padding: 8px 10px;
+    border: 2px solid black;
+    width: 50%;
+    background:#d8d3cd;
+    height: 88vh;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 50px gray;
+    border-radius: 5px;
+}
+
+legend{
+    font-size: 40px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px;
+}
+
+label{
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.change, textarea{
+    display: block;
+    width: 97.5%;
+    border: 2px solid #797a7e ;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+button{
+    background: #000;
+    color: #fff;
+    padding: 0.5rem;
+    margin: .8rem 0 .8rem 0.3rem; 
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+@media (max-width: 1000px){
+    fieldset{
+    padding: 8px 10px;
+    border: 2px solid black;
+    width: 83%;
+    background:#d8d3cd;
+    height: 105vh;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 50px gray;
+    border-radius: 5px;
+}
+
+legend{
+    font-size: 40px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px;
+}
+
+label{
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.change, textarea{
+    display: block;
+    width: 95%;
+    border: 2px solid #797a7e ;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+button{
+    background: #000;
+    color: #fff;
+    padding: 0.5rem;
+    margin: .8rem 0 .8rem 5rem; 
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s ease;
+}
+}
+    </style>
+</head>
+<body>
+
+    <div class="back">
+
+       <a href="portfolio.html"> <button>Back to Portfolio</button></a>
+
+    <form action="index.html" method="GET">
+
+        <fieldset>
+
+        <legend> Registration Form</legend>
+        <label for="First Name">First Name: </label>
+        <input class="change" type="text" name="Name" placeholder="Enter First Name Here" required>
+
+        <label for="Last Name">Last Name: </label>
+        <input class="change" type="text" name="Name" placeholder="Enter Last Name Here" required>
+
+        <label for="Email Address">E-mail Address: </label>
+        <input class="change" type="email" name="Email Address" placeholder="Enter Your E-mail" required>
+
+        <label for="Password">Password: </label>
+        <input class="change" type="password" name="Password" placeholder="Enter a strong password" required>
+
+        <label for="Confirm Password">Confirm Password: </label>
+        <input class="change" type="password" name="Confirm Password" placeholder="Re-enter password" required>
+
+        <label for="Gender">Gender: </label>
+        <input type="radio" name="Gender" required> Male
+        <input type="radio" name="Gender" required> Female
+        <input type="radio" name="Gender" required> Not preferred
+
+        <label for="Date of Birth">Date of Birth: </label>
+        <input class="change" type="date" name="Date of Birth" id="Date of Birth" min="1961-01-01" max="2001-01-01" required> <br>
+
+        <label for="Size">Size: </label>
+        <input type="checkbox" name="Size">8
+        <input type="checkbox" name="Size">9
+        <input type="checkbox" name="Size">10
+        <input type="checkbox" name="Size">11
+        <input type="checkbox" name="Size">12
+
+        <br>
+
+        <label for="Address">Address</label>
+        <textarea placeholder="Address" name="Address" id="Address"></textarea>
+
+        <button class="reset" type="reset">Reset</button>
+        <button class="submit" type="submit">Submit</button>
+
+        </fieldset>
+
+
+    </form>
+
+    </div>
+</body>
+</html>
